@@ -1,89 +1,96 @@
-h1      {
-        font-family: Futura, "Trebuchet MS", Arial, sans-serif;
-		font-size:  30px;
-		font-style: normal;
-		font-variant: normal;
-		font-weight: 500;
-		text-align: center;
-	    }
-p       {
- 		color: rgb(0,0,0);
- 		font-family: 'Goudy Old Style', Garamond, 'Big Caslon', 'Times New Roman', serif;
-        font-size: 18px;
-        text-align: center;
-        }
-ul      {
- 		color: rgb(0,0,0);
- 		font-family: 'Goudy Old Style', Garamond, 'Big Caslon', 'Times New Roman', serif;
-        list-style-position: inside;
-        font-size: 18px;
-	    }
-html    {
-		margin: auto;
-        width: 90%;
-	    }
-h2      {
- 		color: rgb(128,0,0);
-        font-family: Futura, "Trebuchet MS", Arial, sans-serif;
- 		text-decoration: underline;
-        text-align: center;
-        font-size: 30px;
-	    }
-h3      {
-        font-size: 18px;
-        }
-
-a       {
-    	color: rgb(0,0,0);
-        }
-a:link  {
-		background-color: rgb(255,222,173);
-        }
-.module {
-        background: rgb(255,255,245);
-        border: 10px double rgb(128,0,0);
-        /*margin: %;*/
-        margin-left: -4%;
-        width: 102%;
-        }
-.name   {
-        position: relative;
-        height:85px;
-        width: 100%;
-        background-color: rgb(255,255,255);
-        margin-left:6%;
-        }
-.wow    {
-        text-align: center;
-        font-size: 13px;
-        text-align: center;
-        margin:-18px;
-        }
-@media only print {
-                    h1 {font-size:30px;}
-                    .module{margin-left: -12%;width: 450px; float: left;}
-                    .wow{text-align: center;margin:-19px;}        
-}
-
-@media only screen and (min-width: 768px) 
-{
-        .module     {margin-left: -6%;width: 109%;}
-        .wow        {text-align: center;margin:-25px;font-size:1.5rem;}
-        .name       {height: 7rem;width:597px;}
-        h1          {font-size: 3rem;}
-        h2          {font-size: 1.5em;}
-        h3          {font-size: 1.5em}
-        p           {font-size: 1.5em}
-        ul          {font-size: 1.5em}
-}
-@media only screen and (min-width: 1020px) 
-{
-        .module         {width: 109%;}    
-        .wow            {text-align: center;margin:-46px;font-size: 2rem}
-        .name           {height: 12rem;width:88%;}
-        h1              {font-size: 5em}
-        h2              {font-size: 3em}
-        h3              {font-size: 2em}
-        p               {font-size: 1.5em}
-        ul              {font-size: 1.5em}
+body 
+    {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    font: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    color: #000000;
+    background: #1364A6;
+    background-repeat:repeat-x;
     }
+*
+    {
+    margin: 0 auto 0 auto;
+    text-align:left;
+    }
+
+#container
+    {
+    display: block; 
+    height:auto;
+    position: relative; 
+    width: 750px;
+    background: #FFFFFF;
+    background-repeat:repeat-y;
+    padding-left:17px;
+    padding-right:17px;
+    overflow:hidden;
+    }
+
+#links
+    {
+    display:block;
+    float:right;    
+    margin-top:25px;
+    margin-right:10px;
+    }
+
+#links a, #links a:visited
+    {
+    font-size:16px;
+    font-weight:bold;
+    margin-left:4px;
+    margin-right:4px;
+    color: #1652B4;
+    text-decoration:none;
+    }
+
+#links a:hover
+    {
+    border-bottom:dotted 1px #1652B4;
+    }
+
+#header
+    {
+    height:60px;
+    }
+#header h1
+    {
+    margin-top:15px;
+    margin-left:10px;
+    font-size:33px;
+    color:#0A2645;
+    float:left;
+    }
+.off
+    {
+    color:#1652B4;
+    }
+
+.contenttext h2
+    {
+    color:#123F83;
+    font-size:24px;
+    margin-bottom:10px;
+    }
+.contenttext
+    {
+    padding-left:10px;
+    padding-right:10px;
+    }
+
+html, body
+    {
+    text-align: center;
+    }
+p 
+    {
+    text-align: left;
+    }
+iframe  {
+        width: 560px;
+        height: 315px;
+        display: block;
+        margin: auto;
+        }
